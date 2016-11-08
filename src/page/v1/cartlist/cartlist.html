@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"> -->
+  <title>酷派商城</title>
+
+  <link href="/css/jssor.slider.css" rel="stylesheet">
+
+  <script>window.startTime = new Date().getTime(); window.cpmall={};
+  // window.cpmall.data = {{ json_data|safe }};
+  window.cpmall.data={"small_banners": [], "big_banners": [{"url": "#", "id": 1, "size_big": true, "priority": 0, "image": "http://coolpad-cdn.b0.upaiyun.com/images/cool1.jpg", "mobile_image": ""}, {"url": "#", "id": 2, "size_big": true, "priority": 2, "image": "http://coolpad-cdn.b0.upaiyun.com/images/MAXM1.jpg", "mobile_image": ""}], "categories": [{"items": [{"priority": 1, "image": "http://coolpad-cdn.b0.upaiyun.com/images/cool.jpg", "product_url": "/product/product_detail/1/", "name": "COOL\u6840\u9a9c\u94f6", "price": "1099.00"}], "name": "\u70ed\u9500", "rank": 1}, {"items": [], "name": "\u914d\u4ef6", "rank": 2}]};</script>
+
+  <!-- 阿里适配js -->
+  <script type="text/javascript">
+    !function(a,b){function c(){var b=f.getBoundingClientRect().width;b/i>540&&(b=540*i);var c=b/10;f.style.fontSize=c+"px",k.rem=a.rem=c}var d,e=a.document,f=e.documentElement,g=e.querySelector('meta[name="viewport"]'),h=e.querySelector('meta[name="flexible"]'),i=0,j=0,k=b.flexible||(b.flexible={});if(g){console.warn("欢迎来到全球蛙！");var l=g.getAttribute("content").match(/initial\-scale=([\d\.]+)/);l&&(j=parseFloat(l[1]),i=parseInt(1/j))}else if(h){var m=h.getAttribute("content");if(m){var n=m.match(/initial\-dpr=([\d\.]+)/),o=m.match(/maximum\-dpr=([\d\.]+)/);n&&(i=parseFloat(n[1]),j=parseFloat((1/i).toFixed(2))),o&&(i=parseFloat(o[1]),j=parseFloat((1/i).toFixed(2)))}}if(!i&&!j){var p=a.navigator.userAgent,q=(!!p.match(/android/gi),!!p.match(/iphone/gi)),r=q&&!!p.match(/OS 9_3/),s=a.devicePixelRatio;i=q&&!r?s>=3&&(!i||i>=3)?3:s>=2&&(!i||i>=2)?2:1:1,j=1/i}if(f.setAttribute("data-dpr",i),!g)if(g=e.createElement("meta"),g.setAttribute("name","viewport"),g.setAttribute("content","initial-scale="+j+", maximum-scale="+j+", minimum-scale="+j+", user-scalable=no"),f.firstElementChild)f.firstElementChild.appendChild(g);else{var t=e.createElement("div");t.appendChild(g),e.write(t.innerHTML)}a.addEventListener("resize",function(){clearTimeout(d),d=setTimeout(c,300)},!1),a.addEventListener("pageshow",function(a){a.persisted&&(clearTimeout(d),d=setTimeout(c,300))},!1),"complete"===e.readyState?e.body.style.fontSize=12*i+"px":e.addEventListener("DOMContentLoaded",function(){e.body.style.fontSize=12*i+"px"},!1),c(),k.dpr=a.dpr=i,k.refreshRem=c,k.rem2px=function(a){var b=parseFloat(a)*this.rem;return"string"==typeof a&&a.match(/rem$/)&&(b+="px"),b},k.px2rem=function(a){var b=parseFloat(a)/this.rem;return"string"==typeof a&&a.match(/px$/)&&(b+="rem"),b}}(window,window.lib||(window.lib={}));
+  </script>
+  <script src="/js/jquery-1.7.2.min.js"></script>
+  <script src="/js/jssor.slider.mini.js"></script>
+  <script src="/js/canjs.com-2.3.27/can.jquery.js"></script>
+  <script src="/js/canjs.com-2.3.27/can.stache.js"></script>
+</head>
+<body>
+  <div id="render"></div>
+</body>
+</html>

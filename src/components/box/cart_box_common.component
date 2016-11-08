@@ -1,0 +1,15 @@
+var cartBoxCommonMustache = require('./cartBoxCommonMustache.tpl')
+
+module.exports = can.Component.extend({
+  tag: "cartbox-common",
+  template: can.stache(cartBoxCommonMustache),
+  viewModel: {
+    visible: false,
+    message: "Hello There!"
+  },
+  events: {
+    click: function(){
+        this.viewModel.attr("visible", !this.viewModel.attr("visible") );
+    }
+  }
+});

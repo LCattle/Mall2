@@ -1,0 +1,14 @@
+{
+  "sites": {
+    "docs": {
+      "dest": "docs",
+      "parent": "cool-pad-mall",
+      "pageConfig": {
+        "page": "docs"
+      },
+      "glob": {
+        "pattern": "src/**/*.{js,md}"
+      }
+    }
+  }
+}

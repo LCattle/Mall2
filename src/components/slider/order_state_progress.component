@@ -1,0 +1,13 @@
+module.exports = can.Component.extend({
+  tag: "hello-world",
+  template: can.stache("{{#if visible}}{{message}}{{else}}Click me{{/if}}"),
+  viewModel: {
+    visible: false,
+    message: "Hello There!"
+  },
+  events: {
+    click: function(){
+        this.viewModel.attr("visible", !this.viewModel.attr("visible") );
+    }
+  }
+});

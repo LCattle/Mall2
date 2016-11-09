@@ -15,4 +15,4 @@ db.sqlite3
 settings_local.py
 CPMall/local_setings.py
 migrations/
-node_modules/
+

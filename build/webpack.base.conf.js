@@ -11,7 +11,7 @@ var libDir = path.resolve(__dirname, '../src/lib/');
 module.exports = {
   entry: {
     'index': ['./src/page/v1/index/index'],
-    //'cartlist': ['./src/page/v1/cartlist/cartlist']
+    'cartlist': ['./src/page/v1/cartlist/cartlist']
   },
   output: {
     path: path.resolve(__dirname, '../dist-uat/'),

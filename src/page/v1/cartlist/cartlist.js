@@ -1,4 +1,3 @@
-
 /*require('./cartlist.scss');*/
 var CartList = require('./cartlistControl.js')
 

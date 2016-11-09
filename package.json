@@ -9,27 +9,20 @@
     "url": "http://gitlab.coolpad.com/e-commerce/CPMall/tree/frontend_canjs"
   },
   "scripts": {
-    "eslint": "eslint --ext .js src",
     "start": "node ./bin/www",
     "dev": "node build/dev-server.js",
     "riot": "node build/dev-server-riot.js",
     "uat": "rimraf dist-uat && webpack --config build/webpack.uat.conf.js --display-error-details",
     "test": "karma start build/karma.conf.js --single-run"
   },
-  "pre-commit": [
-    "eslint"
-  ],
   "main": "cool-pad-mall/index.stache!done-autorender",
   "files": [
     "src"
   ],
   "keywords": [
-    "Cool",
-    "Pad",
-    "E",
-    "Mall",
-    "Can",
-    "Js"
+    "CoolPad",
+    "EMall",
+    "Canjs"
   ],
   "system": {
     "main": "cool-pad-mall/cart/cartlist/cartlist.js",
@@ -150,12 +143,15 @@
   "devDependencies": {
     "6to5": "^3.3.9",
     "6to5-loader": "^3.0.0",
-    "babel-core": "^6.14.0",
+    "babel-core": "^6.18.2",
     "babel-loader": "^6.2.5",
     "babel-plugin-transform-es2015-modules-amd-simple": "^6.6.7",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.18.0",
     "babel-preset-es2015-riot": "^1.1.0",
+    "babel-runtime": "^5.8.38",
     "can-fixture": "^0.1.2",
     "copy-webpack-plugin": "^3.0.1",
+    "core-js": "^2.4.1",
     "del": "^2.2.0",
     "documentjs": "^0.4.4",
     "donejs-cli": "^0.9.4",
@@ -178,7 +174,7 @@
     "html-webpack-plugin": "^1.7.0",
     "html-webpack-template": "^5.1.1",
     "imports-loader": "^0.6.5",
-    "pre-commit": "^1.1.3",
+    "node-sass": "^3.11.2",
     "rev-replace-loader": "^0.1.3",
     "sass-loader": "^3.2.3",
     "steal-qunit": "^0.1.1",

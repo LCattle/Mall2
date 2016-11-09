@@ -1,5 +1,5 @@
 
-// require('./index.scss');
+/*require('./cartlist.scss');*/
 var CartList = require('./cartlistControl.js')
 
 $(function() {

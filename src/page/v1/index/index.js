@@ -1,5 +1,5 @@
 
-require('./index.scss');
+/*require('./index.scss');*/
 var Index = require('./indexControl.js')
 var indexMustache = require('./indexView.tpl')
 

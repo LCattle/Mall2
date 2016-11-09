@@ -1,0 +1,15 @@
+@media (max-width: 1199px) and (-webkit-device-pixel-ratio: 1.0) {
+	.cartbox_common_img {
+		width: 90px;
+		height: 90px;
+		margin: 20px;
+	}
+}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) and (-webkit-device-pixel-ratio: 1.0) {
+	.cartbox_common_img {
+		width: 110px;
+		height: 110px;
+		margin: 20px;
+	}
+}

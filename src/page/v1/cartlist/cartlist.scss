@@ -1,0 +1,21 @@
+@import '../../../sass/_rem.scss';
+@import '../../../sass/_utilities.scss';
+@import '../../../sass/common.scss';
+@import '../../../components/box/cartboxCommon.scss';
+@import '../../../components/box/cartboxCommon_pc.scss';
+
+@include global-reset;
+
+@media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.0) {
+	body {
+		min-width: 800px;
+	}
+
+
+
+
+}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.0) {
+}
+

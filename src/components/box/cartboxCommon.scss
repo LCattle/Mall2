@@ -1,0 +1,30 @@
+
+.cartbox_common_img {
+	@include rem((
+		width: 90px,
+		height: 90px,
+		margin: 20px
+	));
+}
+
+.cartbox_common_chkbox {
+	width: 24px;
+	height: 24px;
+	float: left;
+	cursor: pointer;
+	margin-left: 10px;
+	text-align: center;
+	/*background-image: url(images/checkbox_01.gif);*/
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.on_check {
+	background-position: 0 -21px;
+}
+.chkbox {
+	opacity: 0;
+	cursor: pointer;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+}

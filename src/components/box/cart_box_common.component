@@ -1,4 +1,4 @@
-var cartBoxCommonMustache = require('./cartBoxCommonMustache.tpl')
+var cartBoxCommonMustache = require('./cartboxCommonMustache.tpl')
 
 module.exports = can.Component.extend({
   tag: "cartbox-common",

@@ -1,33 +1,41 @@
 module.exports = `
-<section class="cartbox-common">
-	<div class="cartbox-common-main">
-		<input type="checkbox" name="cartshopping" value="">
-		<img src="https://img.alicdn.com/bao/uploaded/i4/2815133273/TB2wcV8bC1I.eBjy0FjXXabfXXa_!!2815133273.jpg_b.jpg">
-		<div class="cartbox-common-desc">
-			<span class="cartbox-common-title"></span>
+<section class="cartbox_common">
+	<div class="cartbox_common_main">
+		<div class="cartbox_common_chkbox on_check">
+			<input class="chkbox" type="checkbox" name="cartshopping" value="">
+		</div>
+		<img class="cartbox_common_img" src="https://img.alicdn.com/bao/uploaded/i4/2815133273/TB2wcV8bC1I.eBjy0FjXXabfXXa_!!2815133273.jpg_b.jpg">
+		<div class="cartbox_common_desc">
+			<span class="cartbox_common_title"></span>
 			<p>
-			{{#each obj.big_banners}}
-			<span></span>
+			{{#each cartBrief.labels}}
+			<span class="cartbox_common_label">{{ label }}</span>
 			{{/each}}
 			</p>
 		</div>
 		<p>
-			{{#each obj.big_banners}}
-			<span></span>
-			{{/each}}
+			<span class="cartbox_common_price">{{ cartBrief.newPrice }}</span>
+			{{#if cartBrief.oldPrice}}
+			<span class="cartbox_common_price cartbox_common_price__del">{{ cartBrief.oldPrice }}</span>
+			{{/if}}
 		</p>
 		<div>
-			<button></button>
-			<span>1</span>
-			<button></button>
+			<button class="cartbox_common_btn">-</button>
+			<span class="cartbox_common_num">{{ cartBrief.num }}</span>
+			<button class="cartbox_common_btn">+</button>
 		</div>
-		<p></p>
-		<button>X</button>
+		<p class="cartbox_common_totalprice">{{ cartBrief.totalPrice }}</p>
+		<button class="cartbox_common_btn">X</button>
 	</div>
-	<aside>
-		<div><button></button><span></span><a>了解详情</a></div>
-		<div><button></button><span></span><a>了解详情</a></div>
+	{{#if cartBrief.asideOne }}
+	<aside class="cartbox_common_aside">
+		<button>+</button><span>{{ cartBrief.asideOne }}</span><a>了解详情</a>
 	</aside>
-	<aside></aside>
+	{{/if}}
+	{{#if cartBrief.asideTwo }}
+	<aside>
+		<button>+</button><span>{{ cartBrief.asideTwo }}</span><a>了解详情</a>
+	</aside>
+	{{/if}}
 </section>
 `
